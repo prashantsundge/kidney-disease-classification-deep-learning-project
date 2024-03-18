@@ -1,6 +1,21 @@
 # kidney-disease-classification-deep-learning-project
 kidney disease classification deep learning project
 
+...
+## WorkFlows
+
+1. Update config.yaml
+2. Update secrets.yaml [optional]
+3. update params.yaml
+4. update the entity 
+5. Update the Configuration manager in src config
+6. Update the Componants 
+7. Update the pipeline
+8. Update the main.py
+9. update the dvc.yaml
+10. app.py
+...
+
 
 # how to run?
 
@@ -22,5 +37,6 @@ conda activate cnncls
 ```bash
 pip install -r requirments.txt
 ```
+
 
 
