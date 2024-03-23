@@ -6,7 +6,7 @@ import json
 import joblib
 from ensure import ensure_annotations
 from box import ConfigBox
-from pathlib import path
+from pathlib import Path
 from typing import Any
 import base64
 
@@ -14,7 +14,7 @@ import base64
 
 @ensure_annotations
 
-def read_yaml(path_to_yaml : path) -> ConfigBox:
+def read_yaml(path_to_yaml : Path) -> ConfigBox:
     """
     reads yaml file and returns 
 
@@ -50,25 +50,25 @@ def create_directories(path_to_directories: list,verbose=True):
     '''
 
     for path in path_to_directories:
-        os.makdirs(path, exist_ok=True)
+        os.makedirs(path, exist_ok=True)
         if verbose:
             logger.info(f"Created directory at : {path}")
     
 @ensure_annotations
-def save_json(path:path,data:dict):
+def save_json(path:Path,data:dict):
     """Save json data
 
     Args: 
         path(path):path to json file
         data(dict): data  to be saved in json file
     """
-    with open(path, 'W') as f:
+    with open(path, 'w') as f:
         json.dump(data, f, indent-4)
 
     logger.info(f"json file saved : {path}")
 
 @ensure_annotations
-def load_json(path:path) ->ConfigBox:
+def load_json(path:Path) ->ConfigBox:
     """Load json files data 
     Args:
         path(path):path to json file
@@ -83,7 +83,7 @@ def load_json(path:path) ->ConfigBox:
     return ConfigBox(content)
 
 @ensure_annotations
-def save_bin(data:Any, path:path):
+def save_bin(data:Any, path:Path):
     """Save binary file
 
     Args:
@@ -95,7 +95,7 @@ def save_bin(data:Any, path:path):
 
 
 @ensure_annotations
-def load_bin(path:path) -> Any:
+def load_bin(path:Path) -> Any:
     """Load Binary data
     Args:
         path(path): path to binary file
@@ -107,7 +107,7 @@ def load_bin(path:path) -> Any:
     return data
 
 @ensure_annotations
-def get_size(path:path) ->str
+def get_size(path:Path) ->str :
     """get size in kb
 
     Args:
