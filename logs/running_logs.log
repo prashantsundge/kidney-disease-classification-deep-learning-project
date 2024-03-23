@@ -62,3 +62,551 @@ NameError: name 'obj' is not defined
 [2024-03-23 10:33:27,775:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2024-03-23 10:33:47,513:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2024-03-23 10:33:48,606:INFO: main:>>>>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-03-23 17:49:25,724:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 17:51:23,970:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 17:53:36,272:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 17:54:35,054:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 17:59:12,770:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 18:01:22,238:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 18:01:48,325:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 18:02:26,659:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 18:03:27,702:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 18:09:08,755:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 18:21:28,183:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 18:24:27,466:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 18:25:41,592:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 18:25:41,597:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 18:25:41,600:ERROR: main:while scanning a simple key
+  in "params.yaml", line 11, column 1
+could not find expected ':'
+  in "params.yaml", line 15, column 54]
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 14, in __init__
+    self.params = read_yaml(params_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 36, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 32, in read_yaml
+    content =yaml.safe_load(yaml_file)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+yaml.scanner.ScannerError: while scanning a simple key
+  in "params.yaml", line 11, column 1
+could not find expected ':'
+  in "params.yaml", line 15, column 54
+[2024-03-23 18:33:41,688:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 18:33:41,692:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 18:33:41,695:ERROR: main:while scanning a simple key
+  in "params.yaml", line 11, column 1
+could not find expected ':'
+  in "params.yaml", line 15, column 54]
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 14, in __init__
+    self.params = read_yaml(params_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 36, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 32, in read_yaml
+    content =yaml.safe_load(yaml_file)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+yaml.scanner.ScannerError: while scanning a simple key
+  in "params.yaml", line 11, column 1
+could not find expected ':'
+  in "params.yaml", line 15, column 54
+[2024-03-23 18:34:48,559:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 18:34:48,564:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 18:34:48,565:ERROR: main:while scanning a simple key
+  in "params.yaml", line 11, column 1
+could not find expected ':'
+  in "params.yaml", line 15, column 54]
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 14, in __init__
+    self.params = read_yaml(params_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 32, in read_yaml
+    content =yaml.safe_load(yaml_file)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+yaml.scanner.ScannerError: while scanning a simple key
+  in "params.yaml", line 11, column 1
+could not find expected ':'
+  in "params.yaml", line 15, column 54
+[2024-03-23 20:30:14,876:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 20:31:25,745:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 20:32:12,445:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:32:12,447:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:32:34,043:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:32:34,043:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:33:00,704:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:33:00,704:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:33:13,754:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:33:13,754:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:34:32,759:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:34:32,759:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:35:33,531:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:35:33,531:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:35:51,855:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:35:51,856:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "e:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:37:32,828:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:37:32,830:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "e:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:38:15,807:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:38:15,808:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:47:24,016:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:47:24,016:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:53:44,711:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:53:44,711:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml, 'r') as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:55:38,383:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:55:38,384:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml, 'r') as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:57:57,334:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:57:57,335:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml, 'r') as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:58:11,042:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:58:11,043:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml, ) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 20:58:35,602:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 20:58:35,603:ERROR: main:[Errno 2] No such file or directory: 'config.yaml']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 38, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    with open (path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.yaml'
+[2024-03-23 21:29:57,054:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 21:29:57,057:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 21:29:57,060:ERROR: main:while scanning a simple key
+  in "params.yaml", line 11, column 1
+could not find expected ':'
+  in "params.yaml", line 15, column 54]
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 14, in __init__
+    self.params = read_yaml(params_filepath)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 40, in read_yaml
+    raise e
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\utils\common.py", line 34, in read_yaml
+    content =yaml.safe_load(yaml_file)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "C:\Users\ADMIN\anaconda3\envs\kidney\lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+yaml.scanner.ScannerError: while scanning a simple key
+  in "params.yaml", line 11, column 1
+could not find expected ':'
+  in "params.yaml", line 15, column 54
+[2024-03-23 21:32:21,158:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 21:32:21,175:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 21:32:21,176:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 21:32:21,176:INFO: common:Created directory at : artifacts]
+[2024-03-23 21:32:21,176:INFO: common:Created directory at : artifacts/data_ingestion]
+[2024-03-23 21:32:21,176:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 21:35:30,832:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 21:35:32,065:INFO: main:>>>>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-03-23 21:39:15,444:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 21:39:15,448:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 21:39:15,451:INFO: common:Created directory at : artifacts]
+[2024-03-23 21:39:15,454:INFO: common:Created directory at : artifacts/data_ingestion]
+[2024-03-23 21:39:15,457:INFO: 1804010469:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 21:40:15,110:INFO: 1804010469:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 21:48:05,602:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 21:48:05,604:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 21:48:05,612:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 21:48:05,613:INFO: common:Created directory at : artifacts]
+[2024-03-23 21:48:05,614:INFO: common:Created directory at : artifacts/data_ingestion]
+[2024-03-23 21:48:05,616:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 21:51:22,104:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 21:51:22,863:INFO: main:>>>>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-03-23 22:38:51,173:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 22:38:51,199:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 22:38:51,203:INFO: common:Created directory at : artifacts]
+[2024-03-23 22:39:42,283:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 22:39:42,291:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 22:39:42,294:INFO: common:Created directory at : artifacts]
+[2024-03-23 22:40:20,940:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 22:40:20,947:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 22:40:20,951:INFO: common:Created directory at : artifacts]
+[2024-03-23 22:42:58,427:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 22:42:58,434:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 22:42:58,437:INFO: common:Created directory at : artifacts]
+[2024-03-23 22:42:58,439:INFO: common:Created directory at : artifacts/prepare_base_model]
+[2024-03-23 22:44:43,269:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 22:44:43,275:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 22:44:43,277:INFO: common:Created directory at : artifacts]
+[2024-03-23 22:44:43,280:INFO: common:Created directory at : artifacts/prepare_base_model]
+[2024-03-23 22:46:47,708:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 22:46:47,708:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 22:46:47,723:INFO: common:Created directory at : artifacts]
+[2024-03-23 22:46:47,725:INFO: common:Created directory at : artifacts/prepare_base_model]
+[2024-03-23 22:50:05,028:WARNING: saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-23 23:04:53,983:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 23:04:53,988:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 23:04:53,991:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 23:04:53,992:INFO: common:Created directory at : artifacts]
+[2024-03-23 23:04:53,992:INFO: common:Created directory at : artifacts/data_ingestion]
+[2024-03-23 23:04:53,994:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 23:06:33,351:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 23:06:34,298:INFO: main:>>>>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-03-23 23:06:34,298:INFO: main:***********************************************]
+[2024-03-23 23:06:34,298:INFO: main:>>>>>>> stage prepare base model started <<<<<<<<<<<<]
+[2024-03-23 23:06:34,302:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 23:06:34,305:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 23:06:34,306:INFO: common:Created directory at : artifacts]
+[2024-03-23 23:06:34,306:ERROR: main:'ConfigurationManager' object has no attribute 'get_prepare_base_model_config']
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 23, in <module>
+    prepare_base_model.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage02_prepare_base_model.py", line 13, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_prepare_base_model_config'
+[2024-03-23 23:25:59,197:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 23:25:59,197:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 23:25:59,197:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 23:25:59,197:INFO: common:Created directory at : artifacts]
+[2024-03-23 23:25:59,197:INFO: common:Created directory at : artifacts/data_ingestion]
+[2024-03-23 23:25:59,197:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 23:26:25,677:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 23:26:26,727:INFO: main:>>>>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-03-23 23:26:26,727:INFO: main:***********************************************]
+[2024-03-23 23:26:26,727:INFO: main:>>>>>>> stage prepare base model started <<<<<<<<<<<<]
+[2024-03-23 23:26:26,727:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 23:26:26,727:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 23:26:26,727:INFO: common:Created directory at : artifacts]
+[2024-03-23 23:26:26,727:INFO: common:Created directory at : artifacts/prepare_base_model]
+[2024-03-23 23:26:26,727:ERROR: main:name 'PrepareBaseModel' is not defined]
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 23, in <module>
+    prepare_base_model.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage02_prepare_base_model.py", line 15, in main
+    prepare_base_model = PrepareBaseModel(config= prepare_base_model_config)
+NameError: name 'PrepareBaseModel' is not defined
+[2024-03-23 23:27:30,175:INFO: main:>>>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-03-23 23:27:30,175:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 23:27:30,175:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 23:27:30,175:INFO: common:Created directory at : artifacts]
+[2024-03-23 23:27:30,175:INFO: common:Created directory at : artifacts/data_ingestion]
+[2024-03-23 23:27:30,175:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 23:28:50,242:INFO: data_ingestion:Downloading data from  https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-23 23:28:51,139:INFO: main:>>>>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-03-23 23:28:51,139:INFO: main:***********************************************]
+[2024-03-23 23:28:51,139:INFO: main:>>>>>>> stage prepare base model started <<<<<<<<<<<<]
+[2024-03-23 23:28:51,152:INFO: common:yaml file: config\config.yaml loaded sucessfully]
+[2024-03-23 23:28:51,155:INFO: common:yaml file: params.yaml loaded sucessfully]
+[2024-03-23 23:28:51,155:INFO: common:Created directory at : artifacts]
+[2024-03-23 23:28:51,155:INFO: common:Created directory at : artifacts/prepare_base_model]
+[2024-03-23 23:28:51,158:ERROR: main:local variable 'prepare_base_model' referenced before assignment]
+Traceback (most recent call last):
+  File "E:\DATA SCIENCE\INSAID\CNNPROJECTS\kidney-disease-classification-deep-learning-project\main.py", line 23, in <module>
+    prepare_base_model.main()
+  File "e:\data science\insaid\cnnprojects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage02_prepare_base_model.py", line 15, in main
+    prepare_base_model = prepare_base_model(config= prepare_base_model_config)
+UnboundLocalError: local variable 'prepare_base_model' referenced before assignment

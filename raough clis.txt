@@ -1,0 +1,77 @@
+https://drive.google.com/file/d/16HtdVLJl7ItqJhiQkvTTLMkbhijb5197/view?usp=sharing
+
+Pushing changes to a Git repository involves a few steps. Here's a basic outline of the process:
+
+1. **Stage Changes**: Before pushing changes, you need to stage them. You can stage specific files or all changes in your working directory using the `git add` command.
+
+   ```bash
+   git add <file1> <file2>   # Stage specific files
+   git add .                 # Stage all changes
+   ```
+
+2. **Commit Changes**: After staging the changes, you need to commit them to create a snapshot of your work. Use the `git commit` command for this.
+
+   ```bash
+   git commit -m "Your commit message here"
+   ```
+
+3. **Pull Changes (Optional)**: If you're working in a team or on a shared repository, it's a good practice to pull changes from the remote repository before pushing your own changes. This ensures that your local copy is up-to-date.
+
+   ```bash
+   git pull origin <branch-name>
+   ```
+
+4. **Push Changes**: Once your changes are committed and you've pulled any new changes from the remote repository, you're ready to push your changes.
+
+   ```bash
+   git push origin <branch-name>
+   ```
+
+   Replace `<branch-name>` with the name of the branch you want to push your changes to. This is typically `master` or `main` for the main development branch, but it could be different depending on your project's branching strategy.
+
+5. **Enter Credentials (if prompted)**: If you're pushing to a remote repository that requires authentication, you might be prompted to enter your username and password or use another form of authentication (such as SSH keys).
+
+6. **Review Changes**: After pushing, you can go to your remote repository (e.g., on GitHub, GitLab, or Bitbucket) to review your changes and ensure they were pushed successfully.
+
+That's it! Your changes are now pushed to the remote repository and are available for others to see and collaborate on.
+
+
+
+
+
+To remove a folder from being pushed to a Git repository using the command line, you can follow these steps:
+
+1. **Add Folder to `.gitignore`**: If the folder you want to remove is not already in your `.gitignore` file, you need to add it. Open your `.gitignore` file in a text editor and add the folder name to it. If the folder contains subfolders or files you also want to ignore, you can specify them using patterns. For example:
+
+    ```
+    /folder_to_ignore/
+    ```
+
+    This will ignore the `folder_to_ignore` and all its contents.
+
+2. **Remove Cached Files**: If the folder you want to remove has already been added to the repository and you want to stop tracking it without deleting it from your local filesystem, you need to remove it from the Git index. You can do this with the following command:
+
+    ```bash
+    git rm -r --cached folder_to_ignore
+    ```
+
+    This command removes the folder and its contents from the Git index (`--cached`), but leaves them untouched in your working directory.
+
+3. **Commit Changes**: After removing the folder from the Git index, you need to commit the changes:
+
+    ```bash
+    git commit -m "Stop tracking folder_to_ignore"
+    ```
+
+4. **Push Changes**: Finally, push the changes to the remote repository:
+
+    ```bash
+    git push origin <branch-name>
+    ```
+
+Replace `<branch-name>` with the name of the branch you're working on.
+
+By following these steps, the specified folder will be removed from being tracked by Git and will not be pushed to the remote repository. However, it will still exist in your local filesystem.
+
+
+

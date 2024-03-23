@@ -11,9 +11,7 @@ from typing import Any
 import base64
 
 
-
 @ensure_annotations
-
 def read_yaml(path_to_yaml : Path) -> ConfigBox:
     """
     reads yaml file and returns 
@@ -29,14 +27,16 @@ def read_yaml(path_to_yaml : Path) -> ConfigBox:
     configeBox: configBox type
     """
 
+
+
     try:
         with open (path_to_yaml) as yaml_file:
             content =yaml.safe_load(yaml_file)
             logger.info(f"yaml file: {path_to_yaml} loaded sucessfully")
             return ConfigBox(content)
-    except BoxValueError:
-        raise valueError("Yaml file is emtpy ")
-    except exceptions as e:
+    except BoxValueError : 
+        raise ValueError("Yaml file is emtpy ")
+    except Exception as e:
         raise e
     
 @ensure_annotations
