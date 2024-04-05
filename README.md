@@ -40,3 +40,11 @@ pip install -r requirments.txt
 
 
 
+Run this to export as env varible 
+''' bash
+export MLFLOW_TRACKING_URI=https://dagshub.com/prashantsundge/kidney-disease-classification-deep-learning-project.mlflow
+export MLFLOW_TRACKING_USERNAME=prashantsundge 
+export MLFLOW_TRACKING_PASSWORD=3ba21498f90817599ad55abbe94186bb521b3d22
+'''
+
+#### [dagshub] (https://dagshub.com)
